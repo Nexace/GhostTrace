@@ -1,0 +1,8 @@
+.build/
+.swiftpm/
+DerivedData/
+xcuserdata/
+graphify-out/
+dist/
+.superpowers/
+.DS_Store

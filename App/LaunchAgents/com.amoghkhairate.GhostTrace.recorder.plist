@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Registered by the app with SMAppService.agent(plistName:). launchd runs the bundled recorder at login and restarts it if it exits. -->
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.amoghkhairate.GhostTrace.recorder</string>
+	<key>BundleProgram</key>
+	<string>Contents/MacOS/RecorderAgent</string>
+	<key>AssociatedBundleIdentifiers</key>
+	<array>
+		<string>com.amoghkhairate.GhostTrace</string>
+	</array>
+	<!-- The allocator's space-efficient mode returns freed memory to macOS: the recorder settles near 4 MB instead of 15-20 MB (measured). -->
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>MallocSpaceEfficient</key>
+		<string>1</string>
+	</dict>
+	<!-- The recorder's only IPC under launchd: clients must be signed by the same team (ADR 0005). -->
+	<key>MachServices</key>
+	<dict>
+		<key>com.amoghkhairate.GhostTrace.recorder</key>
+		<true/>
+	</dict>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+	<!-- A second recorder exits at once (the lock is held); retry slowly so it takes over when the other one stops. -->
+	<key>ThrottleInterval</key>
+	<integer>30</integer>
+</dict>
+</plist>

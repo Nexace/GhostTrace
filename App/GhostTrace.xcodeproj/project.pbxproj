@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0000000000000000000010 /* GhostTraceKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000011 /* GhostTraceKit */; };
+		AA0000000000000000000013 /* GhostTraceKit in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000014 /* GhostTraceKit */; };
+		AA0000000000000000000015 /* RecorderAgent in Embed Recorder */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000006 /* RecorderAgent */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AA0000000000000000000016 /* com.amoghkhairate.GhostTrace.recorder.plist in Embed Launch Agent */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000007 /* com.amoghkhairate.GhostTrace.recorder.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA0000000000000000000071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA0000000000000000000050 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA0000000000000000000031;
+			remoteInfo = RecorderAgent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA0000000000000000000025 /* Embed Recorder */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				AA0000000000000000000015 /* RecorderAgent in Embed Recorder */,
+			);
+			name = "Embed Recorder";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000000000000000000026 /* Embed Launch Agent */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchAgents;
+			dstSubfolderSpec = 1;
+			files = (
+				AA0000000000000000000016 /* com.amoghkhairate.GhostTrace.recorder.plist in Embed Launch Agent */,
+			);
+			name = "Embed Launch Agent";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA0000000000000000000002 /* GhostTrace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GhostTrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000000000000000000006 /* RecorderAgent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RecorderAgent; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000000000000000000007 /* com.amoghkhairate.GhostTrace.recorder.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LaunchAgents/com.amoghkhairate.GhostTrace.recorder.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AA0000000000000000000003 /* GhostTraceApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GhostTraceApp;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000005 /* RecorderAgent */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			name = RecorderAgent;
+			path = ../Sources/RecorderAgent;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0000000000000000000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000010 /* GhostTraceKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000000000000000000024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000013 /* GhostTraceKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000003 /* GhostTraceApp */,
+				AA0000000000000000000005 /* RecorderAgent */,
+				AA0000000000000000000007 /* com.amoghkhairate.GhostTrace.recorder.plist */,
+				AA0000000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000002 /* GhostTrace.app */,
+				AA0000000000000000000006 /* RecorderAgent */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0000000000000000000030 /* GhostTraceApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000041 /* Build configuration list for PBXNativeTarget "GhostTraceApp" */;
+			buildPhases = (
+				AA0000000000000000000021 /* Sources */,
+				AA0000000000000000000020 /* Frameworks */,
+				AA0000000000000000000022 /* Resources */,
+				AA0000000000000000000025 /* Embed Recorder */,
+				AA0000000000000000000026 /* Embed Launch Agent */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA0000000000000000000070 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AA0000000000000000000003 /* GhostTraceApp */,
+			);
+			name = GhostTraceApp;
+			packageProductDependencies = (
+				AA0000000000000000000011 /* GhostTraceKit */,
+			);
+			productName = GhostTraceApp;
+			productReference = AA0000000000000000000002 /* GhostTrace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA0000000000000000000031 /* RecorderAgent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000042 /* Build configuration list for PBXNativeTarget "RecorderAgent" */;
+			buildPhases = (
+				AA0000000000000000000023 /* Sources */,
+				AA0000000000000000000024 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AA0000000000000000000005 /* RecorderAgent */,
+			);
+			name = RecorderAgent;
+			packageProductDependencies = (
+				AA0000000000000000000014 /* GhostTraceKit */,
+			);
+			productName = RecorderAgent;
+			productReference = AA0000000000000000000006 /* RecorderAgent */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0000000000000000000050 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2710;
+				LastUpgradeCheck = 2710;
+			};
+			buildConfigurationList = AA0000000000000000000040 /* Build configuration list for PBXProject "GhostTrace" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA0000000000000000000001;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AA0000000000000000000012 /* XCLocalSwiftPackageReference ".." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AA0000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0000000000000000000030 /* GhostTraceApp */,
+				AA0000000000000000000031 /* RecorderAgent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0000000000000000000022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0000000000000000000021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000000000000000000023 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA0000000000000000000070 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA0000000000000000000031 /* RecorderAgent */;
+			targetProxy = AA0000000000000000000071 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA0000000000000000000060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0000000000000000000061 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		AA0000000000000000000062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PCPH987YL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GhostTrace;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.6.0;
+				CURRENT_PROJECT_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoghkhairate.GhostTrace;
+				PRODUCT_NAME = GhostTrace;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		AA0000000000000000000063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PCPH987YL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GhostTrace;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.6.0;
+				CURRENT_PROJECT_VERSION = 1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoghkhairate.GhostTrace;
+				PRODUCT_NAME = GhostTrace;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		AA0000000000000000000064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PCPH987YL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoghkhairate.GhostTrace.recorder;
+				PRODUCT_NAME = RecorderAgent;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		AA0000000000000000000065 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PCPH987YL;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoghkhairate.GhostTrace.recorder;
+				PRODUCT_NAME = RecorderAgent;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0000000000000000000040 /* Build configuration list for PBXProject "GhostTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000060 /* Debug */,
+				AA0000000000000000000061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000000000000000000041 /* Build configuration list for PBXNativeTarget "GhostTraceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000062 /* Debug */,
+				AA0000000000000000000063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000000000000000000042 /* Build configuration list for PBXNativeTarget "RecorderAgent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000064 /* Debug */,
+				AA0000000000000000000065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AA0000000000000000000012 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA0000000000000000000011 /* GhostTraceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GhostTraceKit;
+		};
+		AA0000000000000000000014 /* GhostTraceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GhostTraceKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AA0000000000000000000050 /* Project object */;
+}

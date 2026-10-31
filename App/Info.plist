@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Merged with the keys Xcode generates (GENERATE_INFOPLIST_FILE). -->
+<plist version="1.0">
+<dict>
+	<!-- The allocator's space-efficient mode returns freed memory to macOS: the menu bar instance measured 8.6 MB with it, 12-17 MB without. -->
+	<key>LSEnvironment</key>
+	<dict>
+		<key>MallocSpaceEfficient</key>
+		<string>1</string>
+	</dict>
+</dict>
+</plist>
